@@ -4,7 +4,9 @@
   "description": "Node.js CRUD API, Express",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "start": "node server.js",
+    "test-mocha": "mocha"
   },
   "keywords": [
     "nodejs",
