@@ -2,6 +2,8 @@ const Purchases = require('../models/Purchases.js');
 const Item = require('../models/Item.js');
 var _ = require('lodash');
 
+
+// Create purchase
 exports.create = async (req, res) => {
     try {
         if (req.file) {
@@ -23,6 +25,7 @@ exports.create = async (req, res) => {
     }
 }
 
+// Update purchase
 exports.update = async (req, res) => {
     try {
         let id = req.params.id
@@ -61,6 +64,7 @@ exports.update = async (req, res) => {
     }
 }
 
+// List of purchase based on filter and sort
 exports.purchaseList = async (req, res) => {
     try {
         let mongoQuery = { "isDeleted": false };
@@ -95,6 +99,8 @@ exports.purchaseList = async (req, res) => {
     }
 }
 
+
+// List of items
 exports.itemList = async (req, res) => {
     try {
         let itemData = await Item.find({});

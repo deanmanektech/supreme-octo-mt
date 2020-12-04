@@ -12,5 +12,6 @@ npm run start
 
 ### For test
 ```
+npm install --global mocha
 npm run test-mocha
 ```
