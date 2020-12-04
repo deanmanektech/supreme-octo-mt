@@ -1,4 +1,4 @@
-# Node.js APIs with Express & MySQL
+# Node.js APIs with Express
 
 ## Project setup
 ```
